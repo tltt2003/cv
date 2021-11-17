@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comforter Brush", cursive;
+}
+body {
+  overflow-x: hidden;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 1222;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+header .logo h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+}
+header nav button {
+  margin-left: 50px;
+  padding: 13px 40px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* hover */
+header li:hover a::after {
+  width: 100%;
+}
+header li a::after {
+  content: " ";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 0;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+}
+.line {
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: all 1s;
+}
+header nav button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.bar {
+  height: fit-content;
+  display: none;
+}
+.bar i {
+  color: rgb(10, 10, 10);
+  font-size: 30px;
+  cursor: pointer;
+}
+#nav-phone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+/*  coding convention */
+/* SASS/SCSS: CSS Preprocessor */
+/* CSS preprocessor: bộ tiền sử lí CSS
+Nguyên tắc BEM 
+ */
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none !important;
+  }
+  header {
+    background-color: #fff;
+    position: unset;
+    padding: 10px 0;
+  }
+  .bar {
+    display: block;
+  }
+  header .logo h1 {
+    color: #333 !important;
+  }
+}

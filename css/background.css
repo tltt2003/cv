@@ -1,0 +1,138 @@
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../image/me.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.background .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background__content {
+  background-color: transparent;
+  color: #fff;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+.background__content > * {
+  width: 800px;
+}
+
+.background__content__name {
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.background__content__skill {
+  padding: 40px 0;
+}
+
+.background__content__skill ul {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background__content__skill ul li {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.background__content__from {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.background__content__button {
+  margin-top: 40px;
+}
+
+.background__content__button a {
+  border: 2px solid #fff;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.background__content__button a i {
+  margin-right: 20px;
+}
+
+.background__content__button a:hover {
+  width: 260px;
+  color: #15a2fa;
+  background-color: #fff;
+  border-color: #15a2fa;
+}
+
+.background__content__button a i {
+  margin-right: 20px;
+  margin-left: 1px;
+}
+
+.background__content__button a span {
+  min-width: 200px;
+  display: block;
+}
+
+@-webkit-keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+}
+
+@keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+}
+/*# sourceMappingURL=background.css.map */
